@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * Created by Mart Aarma on 13.09.2015.
@@ -15,12 +16,10 @@ import static org.junit.Assert.assertEquals;
 public class RouteTests {
 
     public static final double DELTA = 0.01;
-    private Route route;
-
 
     @Before
     public void setUp() {
-        route = new Route();
+
     }
 
     @Test
@@ -34,27 +33,31 @@ public class RouteTests {
         Route route = new Route();
         route.addPoint(1,2,0);
         assertEquals(route.getLength(), 0, 0);
+        Point p = route.removePoint(0);
+        assertEquals(1, p.getX(), 0);
+        assertEquals(2, p.getY(), 0);
+    }
+
+    @Test
+    public void testOrder() {
+        Route routeA = new Route();
+        routeA.addPoint(1, 1, 0);
+        routeA.addPoint(1, 20, 1);
+        routeA.addPoint(40, 1, 2);
+
+        Route routeB = new Route();
+        routeB.addPoint(1, 1, 0);
+        routeB.addPoint(40, 1, 1);
+        routeB.addPoint(1, 20, 2);
+
+        assertNotEquals(routeA.getLength(), routeB.getLength(), DELTA);
     }
 
     @Test
     public void testDistance() {
         Route route = new Route();
         route.addPoint(1,1,0);
-        route.addPoint(1,20,1);
         route.addPoint(40,1,1);
-        assertEquals(82.38, route.getLength(), DELTA);
-    }
-
-    @Test
-    public void testOrder() {
-        Route route = new Route();
-        route.addPoint(1,1,0);
-        route.addPoint(1,20,1);
-        route.addPoint(40,1,2);
-
-        Point p = route.removePoint(1);
-        assertEquals(1, p.getX(),0);
-        assertEquals(20, p.getY(),0);
         assertEquals(39, route.getLength(), DELTA);
     }
 }
