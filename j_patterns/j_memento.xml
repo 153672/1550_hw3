@@ -1,0 +1,599 @@
+<?xml version="1.0"  encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2005-02-09 16:06:13">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_2026C4F0_107E_4ac9_A317_A615B30442E7">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="Originator" xmi.id="EAID_85CE165A_A3D2_4682_ACC8_9A5ADC0D460C" visibility="public" namespace="EAPK_2026C4F0_107E_4ac9_A317_A615B30442E7" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="documentation" value="This class creates a memento containing a snapshot of its current internal state and uses the memento to restore its internal state."/>
+						<UML:TaggedValue tag="isSpecification" value="false"/>
+						<UML:TaggedValue tag="ea_stype" value="Class"/>
+						<UML:TaggedValue tag="ea_ntype" value="0"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="package" value="EAPK_2026C4F0_107E_4ac9_A317_A615B30442E7"/>
+						<UML:TaggedValue tag="date_created" value="2003-09-07 11:26:02"/>
+						<UML:TaggedValue tag="date_modified" value="2005-02-09 11:55:48"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+						<UML:TaggedValue tag="tagged" value="0"/>
+						<UML:TaggedValue tag="package_name" value="Memento"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Classifier.feature>
+						<UML:Attribute name="state" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
+							<UML:Attribute.initialValue>
+								<UML:Expression body="&quot;OFF&quot;"/>
+							</UML:Attribute.initialValue>
+							<UML:StructuralFeature.type>
+								<UML:Classifier xmi.idref="eaxmiid0"/>
+							</UML:StructuralFeature.type>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="String"/>
+								<UML:TaggedValue tag="derived" value="0"/>
+								<UML:TaggedValue tag="containment" value="Not Specified"/>
+								<UML:TaggedValue tag="length" value="0"/>
+								<UML:TaggedValue tag="ordered" value="0"/>
+								<UML:TaggedValue tag="precision" value="0"/>
+								<UML:TaggedValue tag="scale" value="0"/>
+								<UML:TaggedValue tag="collection" value="false"/>
+								<UML:TaggedValue tag="position" value="0"/>
+								<UML:TaggedValue tag="lowerBound" value="1"/>
+								<UML:TaggedValue tag="upperBound" value="1"/>
+								<UML:TaggedValue tag="duplicates" value="0"/>
+								<UML:TaggedValue tag="genoption" value="PROPERTY=state;"/>
+								<UML:TaggedValue tag="ea_guid" value="{FC2943C8-0442-44bd-B403-DC2266BAEB18}"/>
+								<UML:TaggedValue tag="styleex" value="volatile=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Attribute>
+						<UML:Operation name="setState" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="property set"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="void"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="stereotype" value="property set"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="position" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{28E73985-5906-4bf6-9C26-365F44876527}"/>
+								<UML:TaggedValue tag="attribute_name" value="state" xmi.id="EAID_D8B36174_506F_419c_A3FA_78B5ABDFE043"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="void"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-5906-4bf6-9C26-365F44876527}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+								<UML:Parameter name="newVal" kind="in" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="String"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{E1D51552-5BD9-4458-86A2-44E5A77A059E}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+						<UML:Operation name="SetMemento" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="void"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="code" value="state = memento.getState();"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="concurrency" value="Sequential"/>
+								<UML:TaggedValue tag="position" value="1"/>
+								<UML:TaggedValue tag="returnarray" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{D0407E17-B05B-4012-B9F0-C42F4415100E}"/>
+								<UML:TaggedValue tag="styleex" value="ShowBeh=1;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="void"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-B05B-4012-B9F0-C42F4415100E}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+								<UML:Parameter name="memento" kind="in" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="Memento"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="classifier" value="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+										<UML:TaggedValue tag="ea_guid" value="{5B4C0D27-33E2-45ca-B1A4-3C38C61C8275}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+						<UML:Operation name="CreateMemento" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="Memento"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="code" value="return (new Memento( state ));"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="concurrency" value="Sequential"/>
+								<UML:TaggedValue tag="position" value="2"/>
+								<UML:TaggedValue tag="returnarray" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{C1794DF4-F4F1-4ae0-BCF9-E120C1070CCB}"/>
+								<UML:TaggedValue tag="styleex" value="ShowBeh=1;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="Memento"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="classifier" value="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-F4F1-4ae0-BCF9-E120C1070CCB}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+						<UML:Operation name="getState" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="property get"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="String"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="stereotype" value="property get"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="concurrency" value="Sequential"/>
+								<UML:TaggedValue tag="position" value="3"/>
+								<UML:TaggedValue tag="returnarray" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{8A901995-B2F6-4676-BDD4-05033D6FA12D}"/>
+								<UML:TaggedValue tag="attribute_name" value="state" xmi.id="EAID_F48F7DCB_A76C_4b96_AF15_200CC8B8935D"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="String"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-B2F6-4676-BDD4-05033D6FA12D}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+					</UML:Classifier.feature>
+				</UML:Class>
+				<UML:Dependency client="EAID_85CE165A_A3D2_4682_ACC8_9A5ADC0D460C" supplier="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0" xmi.id="EAID_9C8121DE_6AC1_4853_B30F_C2819C6F34DD" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="style" value="1"/>
+						<UML:TaggedValue tag="ea_type" value="Dependency"/>
+						<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+						<UML:TaggedValue tag="linemode" value="1"/>
+						<UML:TaggedValue tag="linecolor" value="0"/>
+						<UML:TaggedValue tag="linewidth" value="0"/>
+						<UML:TaggedValue tag="seqno" value="0"/>
+						<UML:TaggedValue tag="headStyle" value="0"/>
+						<UML:TaggedValue tag="lineStyle" value="0"/>
+						<UML:TaggedValue tag="src_visibility" value="Public"/>
+						<UML:TaggedValue tag="src_aggregation" value="0"/>
+						<UML:TaggedValue tag="src_isOrdered" value="false"/>
+						<UML:TaggedValue tag="src_isNavigable" value="false"/>
+						<UML:TaggedValue tag="dst_visibility" value="Public"/>
+						<UML:TaggedValue tag="dst_aggregation" value="0"/>
+						<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+						<UML:TaggedValue tag="dst_isNavigable" value="false"/>
+						<UML:TaggedValue tag="privatedata5" value="EDGE=2;"/>
+					</UML:ModelElement.taggedValue>
+				</UML:Dependency>
+				<UML:Class name="Memento" xmi.id="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0" visibility="public" namespace="EAPK_2026C4F0_107E_4ac9_A317_A615B30442E7" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="documentation" value="This class stores internal state of the Originator object and protects against access by objects other than the originator."/>
+						<UML:TaggedValue tag="isSpecification" value="false"/>
+						<UML:TaggedValue tag="ea_stype" value="Class"/>
+						<UML:TaggedValue tag="ea_ntype" value="0"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="package" value="EAPK_2026C4F0_107E_4ac9_A317_A615B30442E7"/>
+						<UML:TaggedValue tag="date_created" value="2003-09-07 11:26:32"/>
+						<UML:TaggedValue tag="date_modified" value="2005-02-09 11:55:48"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+						<UML:TaggedValue tag="tagged" value="0"/>
+						<UML:TaggedValue tag="package_name" value="Memento"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="$ea_attsclassified" value="{465520E2-4C0A-4145-8ED8-CB9C9A358886}"/>
+						<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Classifier.feature>
+						<UML:Attribute name="state" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
+							<UML:Attribute.initialValue>
+								<UML:Expression/>
+							</UML:Attribute.initialValue>
+							<UML:StructuralFeature.type>
+								<UML:Classifier xmi.idref="eaxmiid0"/>
+							</UML:StructuralFeature.type>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="String"/>
+								<UML:TaggedValue tag="derived" value="0"/>
+								<UML:TaggedValue tag="containment" value="Not Specified"/>
+								<UML:TaggedValue tag="length" value="0"/>
+								<UML:TaggedValue tag="ordered" value="0"/>
+								<UML:TaggedValue tag="precision" value="0"/>
+								<UML:TaggedValue tag="scale" value="0"/>
+								<UML:TaggedValue tag="collection" value="false"/>
+								<UML:TaggedValue tag="position" value="0"/>
+								<UML:TaggedValue tag="lowerBound" value="1"/>
+								<UML:TaggedValue tag="upperBound" value="1"/>
+								<UML:TaggedValue tag="duplicates" value="0"/>
+								<UML:TaggedValue tag="genoption" value="PROPERTY=state;"/>
+								<UML:TaggedValue tag="ea_guid" value="{5B6F3EF5-E081-49dd-8FBE-789DBA2B5650}"/>
+								<UML:TaggedValue tag="styleex" value="volatile=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Attribute>
+						<UML:Operation name="setState" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="property set"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="void"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="stereotype" value="property set"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="position" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{9FB74C53-9DE5-45d5-9EC5-7C9C7F4E9E75}"/>
+								<UML:TaggedValue tag="attribute_name" value="state" xmi.id="EAID_E9A2BF1C_BCF7_4291_8670_A7A5008BF7A4"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="void"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-9DE5-45d5-9EC5-7C9C7F4E9E75}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+								<UML:Parameter name="newVal" kind="in" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="String"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{C36B7D4E-B272-4036-8E28-37E6D1BF5200}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+						<UML:Operation name="Memento" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="code" value="this.state = state;"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="concurrency" value="Sequential"/>
+								<UML:TaggedValue tag="position" value="1"/>
+								<UML:TaggedValue tag="returnarray" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{DC444219-7967-4521-BEE6-443C32F0A874}"/>
+								<UML:TaggedValue tag="styleex" value="ShowBeh=0;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid2"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-7967-4521-BEE6-443C32F0A874}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+								<UML:Parameter name="state" kind="in" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="String"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{6439AD5D-18A4-40fd-87A8-5C64B8BA4A8E}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+						<UML:Operation name="getState" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="property get"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="String"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="stereotype" value="property get"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="concurrency" value="Sequential"/>
+								<UML:TaggedValue tag="position" value="2"/>
+								<UML:TaggedValue tag="returnarray" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{3C788F22-7B1C-4b41-8897-2D49388498A9}"/>
+								<UML:TaggedValue tag="attribute_name" value="state" xmi.id="EAID_506403C5_FB06_48f2_9981_39A2748C3040"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="String"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-7B1C-4b41-8897-2D49388498A9}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+					</UML:Classifier.feature>
+				</UML:Class>
+				<UML:Association xmi.id="EAID_1FBB93AC_DBB5_4fae_B10B_BA0220F36D69" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="style" value="1"/>
+						<UML:TaggedValue tag="ea_type" value="Association"/>
+						<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+						<UML:TaggedValue tag="linemode" value="1"/>
+						<UML:TaggedValue tag="linecolor" value="0"/>
+						<UML:TaggedValue tag="linewidth" value="0"/>
+						<UML:TaggedValue tag="seqno" value="0"/>
+						<UML:TaggedValue tag="headStyle" value="0"/>
+						<UML:TaggedValue tag="lineStyle" value="0"/>
+						<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=4;"/>
+						<UML:TaggedValue tag="virtualInheritance" value="0"/>
+						<UML:TaggedValue tag="lt" value="-memento"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Association.connection>
+						<UML:AssociationEnd visibility="private" aggregation="shared" isOrdered="false" isNavigable="false" type="EAID_7339E131_0D68_4e49_BCDB_D0B26D106A9B">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="containment" value="Unspecified"/>
+							</UML:ModelElement.taggedValue>
+						</UML:AssociationEnd>
+						<UML:AssociationEnd visibility="private" name="memento" aggregation="none" isOrdered="false" isNavigable="true" type="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="containment" value="Unspecified"/>
+							</UML:ModelElement.taggedValue>
+						</UML:AssociationEnd>
+					</UML:Association.connection>
+				</UML:Association>
+				<UML:Class name="Caretaker" xmi.id="EAID_7339E131_0D68_4e49_BCDB_D0B26D106A9B" visibility="public" namespace="EAPK_2026C4F0_107E_4ac9_A317_A615B30442E7" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="documentation" value="This class is responsible for the memento's safekeeping while never operating on or examining the contents of a memento."/>
+						<UML:TaggedValue tag="isSpecification" value="false"/>
+						<UML:TaggedValue tag="ea_stype" value="Class"/>
+						<UML:TaggedValue tag="ea_ntype" value="0"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="package" value="EAPK_2026C4F0_107E_4ac9_A317_A615B30442E7"/>
+						<UML:TaggedValue tag="date_created" value="2003-09-07 11:28:43"/>
+						<UML:TaggedValue tag="date_modified" value="2005-02-09 11:55:48"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+						<UML:TaggedValue tag="tagged" value="0"/>
+						<UML:TaggedValue tag="package_name" value="Memento"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Classifier.feature>
+						<UML:Attribute name="memento" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
+							<UML:Attribute.initialValue>
+								<UML:Expression/>
+							</UML:Attribute.initialValue>
+							<UML:StructuralFeature.type>
+								<UML:Classifier xmi.idref="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+							</UML:StructuralFeature.type>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="Memento"/>
+								<UML:TaggedValue tag="derived" value="0"/>
+								<UML:TaggedValue tag="containment" value="Not Specified"/>
+								<UML:TaggedValue tag="ordered" value="0"/>
+								<UML:TaggedValue tag="collection" value="false"/>
+								<UML:TaggedValue tag="position" value="0"/>
+								<UML:TaggedValue tag="lowerBound" value="1"/>
+								<UML:TaggedValue tag="upperBound" value="1"/>
+								<UML:TaggedValue tag="duplicates" value="0"/>
+								<UML:TaggedValue tag="genoption" value="PROPERTY=memento;"/>
+								<UML:TaggedValue tag="ea_guid" value="{465520E2-4C0A-4145-8ED8-CB9C9A358886}"/>
+								<UML:TaggedValue tag="styleex" value="volatile=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Attribute>
+						<UML:Operation name="getMemento" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="property get"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="Memento"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="stereotype" value="property get"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="position" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{79FC4780-3577-47c2-8EA2-9E0616C70490}"/>
+								<UML:TaggedValue tag="attribute_name" value="memento" xmi.id="EAID_960CAC0C_388C_48ef_8CE6_AA219D92F27B"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="Memento"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="classifier" value="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-3577-47c2-8EA2-9E0616C70490}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+						<UML:Operation name="setMemento" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="property set"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="type" value="void"/>
+								<UML:TaggedValue tag="const" value="false"/>
+								<UML:TaggedValue tag="stereotype" value="property set"/>
+								<UML:TaggedValue tag="synchronised" value="0"/>
+								<UML:TaggedValue tag="position" value="0"/>
+								<UML:TaggedValue tag="pure" value="0"/>
+								<UML:TaggedValue tag="ea_guid" value="{8783B62E-3980-49e4-86F6-CAEE04085782}"/>
+								<UML:TaggedValue tag="attribute_name" value="memento" xmi.id="EAID_DD8C61DA_1717_412d_8648_BA09FB573AFA"/>
+							</UML:ModelElement.taggedValue>
+							<UML:BehavioralFeature.parameter>
+								<UML:Parameter kind="return" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="eaxmiid1"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="void"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{RETURNID-3980-49e4-86F6-CAEE04085782}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+								<UML:Parameter name="newVal" kind="in" visibility="public">
+									<UML:Parameter.type>
+										<UML:Classifier xmi.idref="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+									</UML:Parameter.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="pos" value="0"/>
+										<UML:TaggedValue tag="type" value="Memento"/>
+										<UML:TaggedValue tag="const" value="0"/>
+										<UML:TaggedValue tag="classifier" value="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0"/>
+										<UML:TaggedValue tag="ea_guid" value="{0F971CEC-6E75-4269-8DF0-E18F7B5063D4}"/>
+									</UML:ModelElement.taggedValue>
+									<UML:Parameter.defaultValue>
+										<UML:Expression/>
+									</UML:Parameter.defaultValue>
+								</UML:Parameter>
+							</UML:BehavioralFeature.parameter>
+						</UML:Operation>
+					</UML:Classifier.feature>
+				</UML:Class>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:Diagram name="Memento" xmi.id="EAID_CA8FC949_4D72_4bf4_823B_4DA85329D857" diagramType="ClassDiagram" owner="EAPK_CA8FC949_4D72_4bf4_823B_4DA85329D857" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="documentation" value="This pattern, without violating encapsulation, captures and externalizes an object's internal state so that the object can be restored to this state later."/>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="created_date" value="2004-12-14 13:32:21"/>
+				<UML:TaggedValue tag="modified_date" value="2005-02-08 15:37:11"/>
+				<UML:TaggedValue tag="package" value="EAPK_2026C4F0_107E_4ac9_A317_A615B30442E7"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=780;DocSize.cy=1138;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;"/>
+				<UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=0;TDurLow=0;TDurHigh=100;TDurUnit=;TDurHide=0;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=3;Top=228;Right=237;Bottom=316;imgL=10;imgT=202;imgR=244;imgB=290;" subject="EAID_7339E131_0D68_4e49_BCDB_D0B26D106A9B" seqno="1" style="DUID=DEB74B6A;LBL=;"/>
+				<UML:DiagramElement geometry="Left=23;Top=40;Right=217;Bottom=141;imgL=30;imgT=14;imgR=224;imgB=115;" subject="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0" seqno="2" style="DUID=5706ECDC;LBL=;"/>
+				<UML:DiagramElement geometry="Left=277;Top=36;Right=471;Bottom=150;imgL=284;imgT=10;imgR=478;imgB=124;" subject="EAID_85CE165A_A3D2_4682_ACC8_9A5ADC0D460C" seqno="3" style="DUID=AF850BC7;LBL=;"/>
+				<UML:DiagramElement geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;Path=;" subject="EAID_9C8121DE_6AC1_4853_B30F_C2819C6F34DD" style="Mode=1;EOID=5706ECDC;SOID=AF850BC7;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=CX=58:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=;Path=;" subject="EAID_1FBB93AC_DBB5_4fae_B10B_BA0220F36D69" style="Mode=1;EOID=5706ECDC;SOID=DEB74B6A;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EAStub xmi.id="EAID_85CE165A_A3D2_4682_ACC8_9A5ADC0D460C" name="Originator" UMLType="Class"/>
+		<EAStub xmi.id="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0" name="Memento" UMLType="Class"/>
+		<EAStub xmi.id="EAID_7339E131_0D68_4e49_BCDB_D0B26D106A9B" name="Caretaker" UMLType="Class"/>
+		<UMLPattern name="Memento" category="GoF Behavioral Patterns (Java)" version="1.0" notes="This pattern, without violating encapsulation, captures and externalizes an object's internal state so that the object can be restored to this state later.">
+			<UMLPattern.PromptList>
+				<Element name="Caretaker:Class" guid="EAID_7339E131_0D68_4e49_BCDB_D0B26D106A9B" id="610" prompt="yes" link="yes" classifier="no" type="no">
+					<Comment comment="This class is responsible for the memento's safekeeping while never operating on or examining the contents of a memento.">
+						<![CDATA[This class is responsible for the memento's safekeeping while never operating on or examining the contents of a memento.]]>
+					</Comment>
+				</Element>
+				<Element name="Memento:Class" guid="EAID_9E2F2AF5_20F4_4721_BF95_5E4E935012E0" id="609" prompt="yes" link="yes" classifier="no" type="no">
+					<Comment comment="This class stores internal state of the Originator object and protects against access by objects other than the originator.">
+						<![CDATA[This class stores internal state of the Originator object and protects against access by objects other than the originator.]]>
+					</Comment>
+				</Element>
+				<Element name="Originator:Class" guid="EAID_85CE165A_A3D2_4682_ACC8_9A5ADC0D460C" id="608" prompt="yes" link="yes" classifier="no" type="no">
+					<Comment comment="This class creates a memento containing a snapshot of its current internal state and uses the memento to restore its internal state.">
+						<![CDATA[This class creates a memento containing a snapshot of its current internal state and uses the memento to restore its internal state.]]>
+					</Comment>
+				</Element>
+			</UMLPattern.PromptList>
+			<UMLPattern.PreviewImage xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64" cx="13725" cy="8496">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 4sErAQAAif///xkAAABMAAAAAAAAAAAAAAAAAAAA//////////+AAAAAQwByAGUAYQB0AGUA TQBlAG0AZQBuAHQAbwAoACkAIAA6ACAATQBlAG0AZQBuAHQAbwAAAAcAAAADAAAABgAAAAYA AAADAAAABgAAAAkAAAAGAAAACQAAAAYAAAAGAAAAAwAAAAYAAAADAAAAAwAAAAMAAAADAAAA AwAAAAkAAAAGAAAACQAAAAYAAAAGAAAAAwAAAAYAAABUAAAAWAAAACEBAABqAAAAKgEAAHYA AAABAAAAAADhQQCQ4sEaAQAAfP///wIAAABMAAAAAAAAAAAAAAAAAAAA//////////9QAAAA KwAgAAYAAAADAAAAVAAAABgBAAAyAQAAagAAAMwBAAB2AAAAAQAAAAAA4UEAkOLBKwEAAHz/ //8iAAAATAAAAAAAAAAAAAAAAAAAAP//////////kAAAAKsAcAByAG8AcABlAHIAdAB5ACAA ZwBlAHQAuwAgAGcAZQB0AFMAdABhAHQAZQAoACkAIAA6ACAAUwB0AHIAaQBuAGcABgAAAAYA AAADAAAABgAAAAYAAAAGAAAAAwAAAAMAAAAFAAAAAwAAAAYAAAAGAAAAAwAAAAYAAAADAAAA BgAAAAYAAAADAAAABwAAAAMAAAAGAAAAAwAAAAYAAAADAAAAAwAAAAMAAAADAAAAAwAAAAcA AAADAAAAAwAAAAMAAAAGAAAABgAAABgAAAAMAAAAAAAAACcAAAAYAAAABAAAAAAAAADAv8AA AAAAACUAAAAMAAAABAAAACYAAAAcAAAABgAAAAAAAAABAAAAAAAAAMC/wAAlAAAADAAAAAYA AAArAAAAGAAAABoAAADV////2wAAAHH///8lAAAADAAAAAIAAAAoAAAADAAAAAQAAAAlAAAA DAAAAAMAAAAoAAAADAAAAAYAAAArAAAAGAAAABcAAADY////2AAAAHT///8lAAAADAAAAAUA AABUAAAAeAAAAGgAAAAXAAAAlQAAACIAAAABAAAAAADhQQCQ4sFhAAAAz////wcAAABMAAAA AAAAAAAAAAAAAAAA//////////9cAAAATQBlAG0AZQBuAHQAbwAAAAkAAAAGAAAACQAAAAYA AAAGAAAAAwAAAAYAAAAlAAAADAAAAAEAAAAbAAAAEAAAABcAAAC9////NgAAABAAAADYAAAA vf///xgAAAAMAAAAAACAAFQAAABYAAAAIwAAAC0AAAApAAAAOQAAAAEAAAAAAOFBAJDiwRwA AAC5////AgAAAEwAAAAAAAAAAAAAAAAAAAD//////////1AAAAAtACAAAwAAAAMAAABUAAAA oAAAADQAAAAtAAAAbwAAADkAAAABAAAAAADhQQCQ4sEtAAAAuf///w4AAABMAAAAAAAAAAAA AAAAAAAA//////////9oAAAAcwB0AGEAdABlADoAIAAgAFMAdAByAGkAbgBnAAQAAAADAAAA BgAAAAMAAAAGAAAAAwAAAAMAAAADAAAABwAAAAMAAAADAAAAAwAAAAYAAAAGAAAAGAAAAAwA AAAAAAAAGwAAABAAAAAXAAAAo////zYAAAAQAAAA2AAAAKP///8YAAAADAAAAABAQABUAAAA WAAAACMAAABHAAAALAAAAFMAAAABAAAAAADhQQCQ4sEcAAAAn////wIAAABMAAAAAAAAAAAA AAAAAAAA//////////9QAAAAKwAgAAYAAAADAAAAVAAAADABAAA0AAAARwAAAN4AAABTAAAA AQAAAAAA4UEAkOLBLQAAAJ////8mAAAATAAAAAAAAAAAAAAAAAAAAP//////////mAAAAKsA cAByAG8AcABlAHIAdAB5ACAAcwBlAHQAuwAgAHMAZQB0AFMAdABhAHQAZQAoAFMAdAByAGkA bgBnACkAIAA6ACAAdgBvAGkAZAAGAAAABgAAAAMAAAAGAAAABgAAAAYAAAADAAAAAwAAAAUA AAADAAAABAAAAAYAAAADAAAABgAAAAMAAAAEAAAABgAAAAMAAAAHAAAAAwAAAAYAAAADAAAA BgAAAAMAAAAHAAAAAwAAAAMAAAADAAAABgAAAAYAAAADAAAAAwAAAAMAAAADAAAABQAAAAYA AAADAAAABgAAAFQAAABYAAAAIwAAAFQAAAAsAAAAYAAAAAEAAAAAAOFBAJDiwRwAAACS//// AgAAAEwAAAAAAAAAAAAAAAAAAAD//////////1AAAAArACAABgAAAAMAAABUAAAAqAAAADQA AABUAAAAgwAAAGAAAAABAAAAAADhQQCQ4sEtAAAAkv///w8AAABMAAAAAAAAAAAAAAAAAAAA //////////9sAAAATQBlAG0AZQBuAHQAbwAoAFMAdAByAGkAbgBnACkA/wAJAAAABgAAAAkA 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 AAAGAAAACQAAAAYAAAAGAAAAAwAAAAYAAAADAAAACQAAAAYAAAAJAAAABgAAAAYAAAADAAAA BgAAAAMAAAADAAAAAwAAAAMAAAAFAAAABgAAAAMAAAAGAAAAGAAAAAwAAAAAAAAAJgAAABwA AAAEAAAAAAAAAAEAAAAAAAAAAAAAACUAAAAMAAAABAAAABsAAAAQAAAAFQEAAKX///82AAAA EAAAABIBAACl////GwAAABAAAAAPAQAApf///zYAAAAQAAAADAEAAKX///8bAAAAEAAAAAkB AACl////NgAAABAAAAAGAQAApf///xsAAAAQAAAAAwEAAKX///82AAAAEAAAAAABAACl//// GwAAABAAAAD9AAAApf///zYAAAAQAAAA+gAAAKX///8bAAAAEAAAAPcAAACl////NgAAABAA AAD0AAAApf///xsAAAAQAAAA8QAAAKX///82AAAAEAAAAO4AAACl////GwAAABAAAADrAAAA pf///zYAAAAQAAAA6AAAAKX///8bAAAAEAAAAOUAAACl////NgAAABAAAADiAAAApf///xsA AAAQAAAA3wAAAKX///82AAAAEAAAANwAAACl////GwAAABAAAADZAAAApf///xsAAAAQAAAA 2QAAAKX///8bAAAAEAAAANkAAACl////NgAAABAAAADoAAAAqv///xsAAAAQAAAA2QAAAKX/ //82AAAAEAAAAOgAAACg////EgAAAAwAAAACAAAAGQAAAAwAAAD///8AEgAAAAwAAAABAAAA GQAAAAwAAAD///8AJQAAAAwAAAADAAAAKAAAAAwAAAAEAAAAJgAAABwAAAAEAAAAAAAAAAEA AAAAAAAAAAAAACUAAAAMAAAABAAAABsAAAAQAAAAeAAAABz///82AAAAEAAAAHgAAABz//// VgAAACwAAAB7AAAAtgAAAIQAAADKAAAABAAAAHQAJv94ABz/fQAm/3gAMP8bAAAAEAAAAHgA AABz////GwAAABAAAAB4AAAAc////zYAAAAQAAAAfgAAAGX///8bAAAAEAAAAHgAAABz//// NgAAABAAAABzAAAAZf///xIAAAAMAAAAAgAAABkAAAAMAAAA////AFIAAABwAQAABgAAAPb/ //8AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAABBAFIASQBBAEwAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAhOcSAKzn EgC3LJF8wC0iAGju7gCM5xIAAAAAAI6ggHwAAEAAaO7uAIznEgCloIB8+OcSANKPAAAAAAAA EAAAAAUAAAD85xIA/wAAAMDnEgClAtV3POgSAP8AAADY5xIAbHAOAQoAAAD1Gd1zAADqc0AA AAAAAAAAUOkSAAAAAABo5epzvOcSAFjpEgAX7+Zz/////7joEgCeJt1zBQAAAFDpEgBQ6RIA BQAAAAAAEgA/Qt1zAADRDTzoEgAFAAAAPOgSAFDpEgAXQt1zBQAAADzoEgAFAAAAAAEAAA5K 3XM86BIAAAAAAFxK3XNkdgAIAAAAAGR2AAgAAAAAJQAAAAwAAAAGAAAAVAAAAHwAAABHAAAA eAAAAHcAAACEAAAAAQAAAAAA4UEAkOLBQAAAAG7///8IAAAATAAAAAAAAAAAAAAAAAAAAP// ////////XAAAAC0AbQBlAG0AZQBuAHQAbwADAAAACQAAAAYAAAAJAAAABgAAAAYAAAADAAAA BgAAACUAAAAMAAAAAQAAACgAAAAMAAAABgAAABIAAAAMAAAAAQAAABkAAAAMAAAA////ACUA AAAMAAAAAwAAACgAAAAMAAAABAAAACUAAAAMAAAADQAAgCgAAAAMAAAAAQAAACgAAAAMAAAA BQAAACUAAAAMAAAAAAAAgCgAAAAMAAAAAgAAACUAAAAMAAAABwAAgCgAAAAMAAAAAwAAAA4A AAAUAAAAAAAAABAAAAAUAAAA</UMLPattern.PreviewImage>
+		</UMLPattern>
+	</XMI.extensions>
+</XMI>
